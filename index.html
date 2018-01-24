@@ -2,92 +2,214 @@
 <html lang="en">
 
   <head>
-
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>EduInfo</title>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-            <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-            <link rel="stylesheet" href="css/main.css">
-            <link href='https://fonts.googleapis.com/css?family=Raleway:400,200' rel='stylesheet' type='text/css'> 
-            <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
-      <style>
+    <title>NewEduInfo</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">(yo garda chin duita milcha but font small; ani timro ni 3.3.7)
 
-      body {
-        padding-top: 54px;
-      }
-      @media (min-width: 992px) {
-        body {
-          padding-top: 56px;
-        }
-      }
+    <link rel="stylesheet" href="css/bootstrap.min.css">(yo halda notice aauncha ; tara nav bigrincha )
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/social.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
 
-    </style>  
-<style>
+
+
     
-.body {
-  background: #25343F;
-  color: #fff;
-  font-family: 'Raleway', sans-serif;
-}
-    </style>
 
-  </head>
+</head>
 
-  <body>
+<body>
+    		
 
-    <!-- Navigation -->
-    <div align="right" style="border: 10px solid white;border-spacing: 20px 20px">
-   <a href="signin.html" class="btn btn-info" role="button"><i class="material-icons" style="font-size:25px">person</i>Sign In</a>
-   </div>
-    
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="nav nav-pills nav-justified" role="tablist">
-              <li class="active"><a href="#">Home</a></li>
-              <li><a href="search.html">Search Field</a></li>
-              <li><a href="#">Compare Course</a></li>
-              <li><a href="#">Q&A Forum</a></li>
-              <li><a href="#">About</a></li>   
-            </ul>
-          </ul>
-        </div>
-      </div>
-    </nav>
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark indigo">
 
-    <!-- Page Content -->
-    <div class="container">
-      
-        <div style="height: 500px;">
-        <h1 align="center"> Visualization Here </h1>
-        </div>
-            <div align="center" class="container">
-            
-            
-            <a id="question_here" href="question.html" class="btn btn-info btn-lg" role="button">Guide Me : /</a>     
-            </div>
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">EDU Info</a>
 
-        
-        </div>
-      </div>
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li>
+            <a class="navbar-brand" href="#">
+            <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="">
+            </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Choose Field</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Compare Course</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Forum</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Foreign Courses</a>
+                    <a class="dropdown-item" href="#">List Colleges</a>
+                    <a class="dropdown-item" href="#">GG</a>
+                </div>
+            </li>
+
+        </ul>
+        <!-- Links -->
+
+        <!-- Search form -->
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </form>
+
+       
     </div>
+    <!-- Collapsible content -->
 
-    <!-- Bootstrap core JavaScript -->
-    <script src="vendor/jquery/jquery.min.js"></script>
-    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-
-    <nav class="social">
+     <ul class="navbar-nav mr-auto">
+            <!-- Dropdown -->
+           <li class="nav-item">
+                <a class="nav-link" href="#">SignIn/Register</a>
+            </li>
+        </ul>
+</nav>
+<nav class="social">
           <ul>
               <li><a href="https://twitter.com/eduinfo">Twitter <i class="fa fa-twitter"></i></a></li>
               <li><a href="https://facebook.com/eduinfo">Facebook <i class="fa fa-facebook"></i></a></li>
               <li><a href="http://dribbble.com/eduinfo">Dribbble <i class="fa fa-dribbble"></i></a></li>
               <li><a href="http://behance.net/eduinfo">Behance <i class="fa fa-behance"></i></a></li>
+            </ul>
+</nav>
+<div class="container">
+<div class="row">
+                <div class="col-md-4">
+                <div class="container-fluid">
+                            <div class="row">
+                                <div class="col-md-9 col-md-offset-9">
+                                    <div class="notice-board">
+                                        <div class="panel panel-default">
+                                            <div class="panel-heading">
+                                           Active  Notice Panel 
+                                                <div class="pull-right" >
+                                                    <div class="dropdown">
+                  <button class="btn btn-success dropdown-toggle btn-xs" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                    <span class="glyphicon glyphicon-cog"></span>
+                    <span class="caret"></span>
+                  </button>
+                  <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Refresh</a></li>
+                    <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Logout</a></li>
+                  </ul>
+                </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel-body">
+                                               
+                                                <ul style="padding-left:0px;list-style:none;">
+                                                    <li>
+                                                        <a href="#">
+                                                        <span class="glyphicon glyphicon-map-marker text-danger" ></span>
+                                                        Lorem ipsum dolor sit amet ipsum dolor sit amet
+                                                         <span class="label label-danger" > 35 USD </span>
+                                                            </a>
+                                                    </li>
+                                                     <li>
+                                                            <a href="#">
+                                                     <span class="glyphicon glyphicon-align-left text-success" ></span> 
+                                                                  Lorem ipsum dolor sit amet ipsum dolor sit amet
+                                                                 <span class="label label-warning" > Just now </span>
+                                                            </a>
+                                                    </li>
+                                                     <li>
+                                                          <a href="#">
+                                                     <span class="glyphicon glyphicon-info-sign text-danger" ></span>  
+                                                          Lorem ipsum dolor sit amet ipsum dolor sit amet
+                                                          <span class="label label-info" > 2 min chat</span>
+                                                            </a>
+                                                    </li>
+                                                     <li>
+                                                          <a href="#">
+                                                     <span class="glyphicon glyphicon-comment  text-warning" ></span>  
+                                                          Lorem ipsum dolor sit amet ipsum dolor sit amet
+                                                          <span class="label label-success" >GO ! </span>
+                                                            </a>
+                                                    </li>
+                                                    <li>
+                                                          <a href="#">
+                                                     <span class="glyphicon glyphicon-edit  text-danger" ></span>  
+                                                          Lorem ipsum dolor sit amet ipsum dolor sit amet
+                                                          <span class="label label-success" >Let's have it </span>
+                                                            </a>
+                                                    </li>
+                                                    <li>
+                                                          <a href="#">
+                                                     <span class="glyphicon glyphicon-headphones  text-success" ></span>  
+                                                          Lorem ipsum dolor sit amet ipsum dolor sit amet
+                                                          <span class="label label-danger" >789.0 v </span>
+                                                            </a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                            <div class="panel-footer">
+                                                <a href="#" class="btn btn-default btn-block"> <i class="glyphicon glyphicon-repeat"></i> Just A Small Footer Button</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- END BOARD PANEL-->
+                                </div>
+                            </div>
+                    </div>
 
-  </body>
 
+                //
+                    </div>
+    
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mdb.min.js"></script>   
+
+
+</body>
 </html>
