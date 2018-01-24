@@ -100,14 +100,10 @@
 
 <div class="container">
   <h1>Tick Your Interest Related Terms & Let Us Guide You.</h1>
-  <p>Leave it if the field Annoys you.</p>
+  <p>Leave it if the field annoys you.</p>
 
   <script type="text/javascript">
     var agclicks = 0;
-    var egclicks = 0;
-    var mgclicks = 0;
-    var medclicks = 0;
-
     function onagClick() {
         agclicks += 1;
         document.getElementById("agclicks").innerHTML = agclicks;
@@ -125,17 +121,8 @@
         document.getElementById("medclicks").innerHTML = medclicks;
     };
     function checkClick(){
-      totclicks=Math.max(medclicks,mgclicks,egclicks,agclicks);
-      switch (totclicks){
-          case medclicks:
-              document.getElementById("totclicks").innerHTML="medclicks";
-              break;
-          case mgclicks:
-              document.getElementById("totclicks").innerHTML="mgclicks";
-
-
-      }
-      
+      totclicks+=1;
+      document.getElementById("totclicks").innerHTML = medclicks+agclicks+mgclicks;
     };
 
     </script>
@@ -144,66 +131,88 @@
     <input type="checkbox" onClick="onegClick()">EG</input>
     <input type="checkbox" onClick="onmgClick()">MG</input>
     <input type="checkbox" onClick="onmedClick()">MED</input>
-    
-    <p>Clicks AG: <a id="agclicks">0</a></p>
-    <p>Clicks EG: <a id="egclicks">0</a></p>
-    <p>Clicks MG: <a id="mgclicks">0</a></p>
-    <p>Clicks MED: <a id="medclicks">0</a></p>
-    <p>Clicks TOTAL: <a id="totclicks">0</a></p>
+    <input type="checkbox" onClick="countClick()">TOT</input>
+    <p>Clicks: <a id="agclicks">0</a></p>
+    <p>Clicks: <a id="egclicks">0</a></p>
+    <p>Clicks: <a id="mgclicks">0</a></p>
+    <p>Clicks: <a id="medclicks">0</a></p>
+    <p>Clicks: <a id="totclicks">0</a></p>
     
 
   <form>
     <div class="row">
     <div class="col-md-4 checkbox">
-      <input type="checkbox" onClick="onagClick()">Farming</input>
+      <label><input type="checkbox" value="">Option 1</label>
     </div>
     <div class="col-md-4 checkbox">
-      <input type="checkbox" onClick="onegClick()">Coding</input>
+      <label><input type="checkbox" value="">Option 2</label>
     </div>
     <div class="col-md-4 checkbox disabled">
-      <input type="checkbox" onClick="onegClick()">Photography</input>
+      <label><input type="checkbox" value="">Option 3</label>
     </div>
     </div>
 
     <div class="row">
     <div class="col-md-4 checkbox">
-      <input type="checkbox" onClick="onegClick()">Designing</input>
+      <label><input type="checkbox" value="">Option 1</label>
     </div>
     <div class="col-md-4 checkbox">
-      <input type="checkbox" onClick="onmgClick()">Fashion</input>
+      <label><input type="checkbox" value="">Option 2</label>
     </div>
     <div class="col-md-4 checkbox">
-      <input type="checkbox" onClick="onmgClick()">Busssiness</input>
+      <label><input type="checkbox" value="">Option 3</label>
     </div>
     </div>
 
     <div class="row">
     <div class="col-md-4 checkbox">
-      <input type="checkbox" onClick="onmedClick()">Medical</input>
+      <label><input type="checkbox" value="">Option 1</label>
     </div>
     <div class="col-md-4 checkbox">
-      <input type="checkbox" onClick="onmgClick()">Tourism</input>
+      <label><input type="checkbox" value="">Option 2</label>
     </div>
     <div class="col-md-4 checkbox">
-      <input type="checkbox" onClick="onmgClick()">Social</label>
+      <label><input type="checkbox" value="">Option 3</label>
     </div>
     </div>
     <div class="row">
     <div class="col-md-4 checkbox">
-      <input type="checkbox" onClick="onmgClick()">Environment</input>
+      <label><input type="checkbox" value="">Option 1</label>
     </div>
     <div class="col-md-4 checkbox">
-      <input type="checkbox" onClick="onegClick()">Physics</input>
+      <label><input type="checkbox" value="">Option 2</label>
     </div>
     <div class="col-md-4 checkbox ">
-      <input type="checkbox" onClick="onegClick()">Sketching</input>
+      <label><input type="checkbox" value="">Option 3</label>
     </div>
     </div>
-  <div class="row">
-          <button type="button" class="btn btn-primary btn-lg" onclick="checkClick()">Submit</button>
-  </div>
-</form>
+    </form>
+      <form>
+          <input type="button" name="Submit" value="Submit" onclick="getvalue()"></div>
+      </form>
 </div>
+    
+</div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

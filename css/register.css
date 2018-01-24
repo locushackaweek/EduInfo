@@ -63,3 +63,7 @@ input::-webkit-input-placeholder {
 .top-gap {
   margin-top: 40px;
 }
+
+.fieldTitle {
+  font-family: monospace;
+}

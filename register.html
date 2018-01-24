@@ -20,7 +20,7 @@
 
     <!-- custom css -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" typr="text/css" href="css/login.css">
+    <link rel="stylesheet" typr="text/css" href="css/register.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -31,13 +31,12 @@
     <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
 
 
-    
 
 
 </head>
 
 <body>
-    		
+        
 
 <!--Navbar-->
 <nav class="navbar navbar-expand-lg navbar-dark indigo">
@@ -62,10 +61,10 @@
             <li class="nav-item active">
                 <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
             </li>
+            
             <li class="nav-item">
                 <a class="nav-link" href="search.html">Search Course</a>
             </li>
-
             <li class="nav-item">
                 <a class="nav-link" href="#">Choose Field</a>
             </li>
@@ -177,12 +176,21 @@
         <div class="offset-md-4 col-md-4 top-gap">
           <div class="login-form">
            <div class="login-title text-center">
-                  <h4><strong>Login Form</strong></h4>
+                  <h4>Register Form</h4>
                 </div>
               <div class="main-login main-center" id="loginform">
                
           <form class="form-horizontal" method="post" action="#">
             
+            <div class="form-group">
+              <label for="name" class="cols-sm-2 control-label"><strong>Your Name</strong></label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"></span>
+                  <input type="text" class="form-control" name="name" id="name"  placeholder="Enter your Name"/>
+                </div>
+              </div>
+            </div>
 
             <div class="form-group">
               <label for="email" class="cols-sm-2 control-label"><strong>Your Email</strong></label>
@@ -194,9 +202,8 @@
               </div>
             </div>
 
-
             <div class="form-group">
-              <label for="password" class="cols-sm-2 control-label"><strong>Password</strong> </label>
+              <label for="password" class="cols-sm-2 control-label"><strong>Password</strong></label>
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"></span>
@@ -205,15 +212,71 @@
               </div>
             </div>
 
-            <div class="form-group ">
-              <button type="button" class="btn btn-primary btn-lg btn-block login-button">Login</button>
+            <div class="form-group">
+              <label for="username" class="cols-sm-2 control-label"><strong>Address</strong></label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"></span>
+                  <input type="text" class="form-control" name="address" id="address"  placeholder="Enter your Address"/>
+                </div>
+              </div>
             </div>
-            <div class="login-register text-left">
-                    <a href="#">forget your password ?</a>
-                 </div><br>
-                 <div class="login-register text-left">
-                    <a href="register.html">Create new account</a>
-                 </div>
+
+            <div class="form-group">
+              <label for="confirm" class="cols-sm-2 control-label"><strong>Phone Number</strong></label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"></span>
+                  <input type="password" class="form-control" name="phonenum" id="phonenum"  placeholder="Enter Your Phone Number"/>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="confirm" class="cols-sm-2 control-label"><strong>Level:</strong></label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"></span>
+                  <form>
+                      <div class="checkbox">
+                        <label><input type="checkbox" name="level" id="level" value="SEE" >SEE</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" name="level" id="level" value="+2" />+2</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" name="level" id="level" value="diploma" />DIPLOMA</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" name="level" id="level" value="bachelore" />BACHELOR</label>
+                      </div>
+                      <div class="checkbox">
+                        <label><input type="checkbox" name="level" id="level" value="masters" />MASTERS</label>
+                      </div>
+                    </form>
+                   
+                </div>
+              </div>
+            </div>
+
+            <form>
+    
+
+            <div class="form-group">
+              <label for="confirm" class="cols-sm-2 control-label"><strong>Profession:</strong></label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"></span>
+                  <div class="checkbox">
+                        <label><input type="checkbox" name="profession" value="student">Student</label></div>
+                  <div class="checkbox">
+                        <label><input type="checkbox" name="profession" value="others">Others</label></div>
+              </div>
+            </div>
+
+            <div class="form-group ">
+              <button type="button" name="submit" value="Submit" class="btn btn-primary btn-lg btn-block login-button">Register</button>
+            </div>
           </form>
         </div>
       </div> 
