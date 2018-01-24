@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>NewEduInfo</title>
+   
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/mdb.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/social.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+
+
+    
+
+</head>
+
+<body>
+    		
+
+<!--Navbar-->
+<nav class="navbar navbar-expand-lg navbar-dark indigo">
+
+    <!-- Navbar brand -->
+    <a class="navbar-brand" href="#">EDU Info</a>
+
+    <!-- Collapse button -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+        aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+        <!-- Links -->
+        <ul class="navbar-nav mr-auto">
+            <li>
+            <a class="navbar-brand" href="#">
+            <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt="">
+            </a>
+            </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Choose Field</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Compare Course</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Forum</a>
+            </li>
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown ">
+                <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">More</a>
+                <div class="dropdown-menu dropdown-primary" aria-labelledby="navbarDropdownMenuLink">
+                    <a class="dropdown-item" href="#">Foreign Courses</a>
+                    <a class="dropdown-item" href="#">List Colleges</a>
+                    <a class="dropdown-item" href="#">GG</a>
+                </div>
+            </li>
+
+        </ul>
+        <!-- Links -->
+
+        <!-- Search form -->
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+        </form>
+
+       
+    </div>
+    <!-- Collapsible content -->
+
+     <ul class="navbar-nav mr-auto">
+            <!-- Dropdown -->
+           <li class="nav-item">
+                <a class="nav-link" href="#">SignIn/Register</a>
+            </li>
+        </ul>
+</nav>
+<nav class="social">
+          <ul>
+              <li><a href="https://twitter.com/eduinfo">Twitter <i class="fa fa-twitter"></i></a></li>
+              <li><a href="https://facebook.com/eduinfo">Facebook <i class="fa fa-facebook"></i></a></li>
+              <li><a href="http://dribbble.com/eduinfo">Dribbble <i class="fa fa-dribbble"></i></a></li>
+              <li><a href="http://behance.net/eduinfo">Behance <i class="fa fa-behance"></i></a></li>
+            </ul>
+</nav>
+
+
+<div class="container">
+  <h1>Tick Your Interest Related Terms & Let Us Guide You.</h1>
+  <p>Leave it if the field Annoys you.</p>
+
+  <script type="text/javascript">
+    var agclicks = 0;
+    var egclicks = 0;
+    var mgclicks = 0;
+    var medclicks = 0;
+
+    function onagClick() {
+        agclicks += 1;
+        document.getElementById("agclicks").innerHTML = agclicks;
+    };
+    function onegClick() {
+        egclicks += 1;
+        document.getElementById("egclicks").innerHTML = egclicks;
+    };
+    function onmgClick() {
+        mgclicks += 1;
+        document.getElementById("mgclicks").innerHTML = mgclicks;
+    };
+    function onmedClick() {
+        medclicks += 1;
+        document.getElementById("medclicks").innerHTML = medclicks;
+    };
+    function checkClick(){
+      totclicks=Math.max(medclicks,mgclicks,egclicks,agclicks);
+      switch (totclicks){
+          case medclicks:
+              document.getElementById("totclicks").innerHTML="medclicks";
+              break;
+          case mgclicks:
+              document.getElementById("totclicks").innerHTML="mgclicks";
+
+
+      }
+      
+    };
+
+    </script>
+
+    <input type="checkbox" onClick="onagClick()">AG</input>
+    <input type="checkbox" onClick="onegClick()">EG</input>
+    <input type="checkbox" onClick="onmgClick()">MG</input>
+    <input type="checkbox" onClick="onmedClick()">MED</input>
+    
+    <p>Clicks AG: <a id="agclicks">0</a></p>
+    <p>Clicks EG: <a id="egclicks">0</a></p>
+    <p>Clicks MG: <a id="mgclicks">0</a></p>
+    <p>Clicks MED: <a id="medclicks">0</a></p>
+    <p>Clicks TOTAL: <a id="totclicks">0</a></p>
+    
+
+  <form>
+    <div class="row">
+    <div class="col-md-4 checkbox">
+      <input type="checkbox" onClick="onagClick()">Farming</input>
+    </div>
+    <div class="col-md-4 checkbox">
+      <input type="checkbox" onClick="onegClick()">Coding</input>
+    </div>
+    <div class="col-md-4 checkbox disabled">
+      <input type="checkbox" onClick="onegClick()">Photography</input>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-4 checkbox">
+      <input type="checkbox" onClick="onegClick()">Designing</input>
+    </div>
+    <div class="col-md-4 checkbox">
+      <input type="checkbox" onClick="onmgClick()">Fashion</input>
+    </div>
+    <div class="col-md-4 checkbox">
+      <input type="checkbox" onClick="onmgClick()">Busssiness</input>
+    </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-4 checkbox">
+      <input type="checkbox" onClick="onmedClick()">Medical</input>
+    </div>
+    <div class="col-md-4 checkbox">
+      <input type="checkbox" onClick="onmgClick()">Tourism</input>
+    </div>
+    <div class="col-md-4 checkbox">
+      <input type="checkbox" onClick="onmgClick()">Social</label>
+    </div>
+    </div>
+    <div class="row">
+    <div class="col-md-4 checkbox">
+      <input type="checkbox" onClick="onmgClick()">Environment</input>
+    </div>
+    <div class="col-md-4 checkbox">
+      <input type="checkbox" onClick="onegClick()">Physics</input>
+    </div>
+    <div class="col-md-4 checkbox ">
+      <input type="checkbox" onClick="onegClick()">Sketching</input>
+    </div>
+    </div>
+  <div class="row">
+          <button type="button" class="btn btn-primary btn-lg" onclick="checkClick()">Large</button>
+  </div>
+</form>
+</div>
+
+
+
+
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/mdb.min.js"></script>   
+
+
+</body>
+</html>
