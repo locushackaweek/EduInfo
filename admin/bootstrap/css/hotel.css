@@ -1,0 +1,72 @@
+.info {
+	background-color: blue;
+}
+
+.information {
+	margin-top: 70px;
+}
+
+#hotelimage {
+	padding-top: 10px;
+}
+.hotelImage img {
+	width: 100%;
+	height: 312px;
+	border: 1px solid red;
+}
+.hotelImage input[type=file]{
+padding:10px;
+background:skyblue;
+}
+#imagechoose {
+	padding-top: 20px;
+}
+hr {
+	border: 1px solid green;
+}
+
+#map {
+	padding: 10px;
+}
+
+/*css of all the same type of form*/
+.panel .panel-heading {
+	background-color: teal;
+	color : white ;
+}
+.formpadding {
+	padding: 10px;
+}
+.lorem {
+	padding-top: 10px;
+}
+
+.formitem {
+	padding: 10px 10px 10px 10px;
+}
+textarea.form-control{
+    height:150px;
+}
+.subtext {
+	padding-left: 20px;
+	font-family: monospace;
+}
+/* create about description css*/
+.btn-group-xs>.btn, .btn-xs {
+    padding: 5px 5px;
+    
+    }
+    /*css for all the table used*/
+ .table {
+  border: 0.5px blur #7095f9;
+}
+
+ tr:nth-child(even) {
+    background-color: #FFFFFF;
+}
+ tr:nth-child(odd) {
+    background-color: #a5a29b;
+}
+#mytable thead, th {
+	background-color: yellow;
+}

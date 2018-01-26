@@ -1,0 +1,12 @@
+.forum-container {
+    margin-top: 50px;
+}
+.mediaImage {
+	width:60px;
+	height: 50px;
+}
+
+#questionTitle a:hover {
+	text-decoration-color: blue;
+
+}
